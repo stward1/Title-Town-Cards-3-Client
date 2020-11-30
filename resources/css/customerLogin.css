@@ -1,0 +1,133 @@
+body{
+  font-family: 'Roboto', sans-serif;  
+}
+.row{
+
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 70px;
+  padding-top: 40px;
+}
+
+
+
+/*This creates the navbar*/
+.navbar{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+/*Pushes nav to the right*/
+nav{
+  flex: 1;
+  text-align: right;
+  padding-bottom: 15px;
+}
+/*puts list in a horizontal line*/
+nav ul{
+  display:inline-block;
+  list-style-type:none;
+}
+/*Takes away bulletpoints*/
+nav ul li{
+  display: inline-block;
+  list-style-type: none;
+}
+/*Changes the anchor link color to black */
+a{
+  text-decoration:none;
+  color: black;
+  padding-left: 15px;
+}
+/*Keeps it black when hovered over?*/
+p{
+  color: #555
+}
+/*spaces the margins of the navbar containe evenly on the page*/
+.header-container{
+  max-width:1300px;
+  margin:auto;
+  padding-left:25px;
+  padding-right: 25px;   
+}
+
+.login-header{
+background-color:white;
+color:#8B0000
+;
+}
+.register-header{
+background-color:white;
+color:#8B0000;
+}
+
+
+
+/* Full-width inputs */
+input[type=text], input[type=password], input[type=vpassword], input[type=email], input[type=fname], input[type=lname]{
+  width: 400px; 
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: border-box;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.row{
+  display: flex;
+  align-items:top;
+  justify-content: space-around;
+}
+/*Login header*/
+.cont-1 h1{
+  font-family: 'Anton', sans-serif;
+  
+  text-align: center;
+}
+cont-1{
+  flex-basis:50%;
+  min-width: 50px;
+}
+.register-box-stuff{
+  padding-left: 40px;
+}
+.login-box-stuff{
+  padding-left: 30px;
+}
+
+
+/* Set a style for all buttons */
+button {
+  background-color: #8B0000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  background-color: red;
+}
+
+.emplogin-container{
+  text-align: right;
+  margin-right:60px;
+
+}
+.btn{
+  background-color: #555;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
+button:hover {
+  background-color: red;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Login/ Register</title>
+    <link rel ="stylesheet" type="text/css" href=".\resources\css\employeeLogin.css">
+    <!--Below is the link to get Roboto font from Googlefonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!--Link to cart icon-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!--Adds the navbar inside a class named container-->
+    <div class = "header">
+        <div class="header-container">
+            <div class="navbar">
+                <div class="logo">
+                    <!--logo from images folder-->
+                    <img src="./resources/images/TTownCardsLogo.png" width="150px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html"> Home </a></li>
+                        <li><a href=""> About </a></li>
+                        <li><a href=""> Contact </a></li>
+                        <li><a href=""> Account </a></li>
+                        <li><a href=""> Login/Register </a></li>
+                        <li><a href=""> Cart </a></li>
+                    </ul>
+                    <!--adds icon for cart-->
+                    <i class="fa fa-shopping-cart" width="30px" height "30px"></i>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!--<button onclick="addCustomer()">TEMPORARY SIGN UP</button>-->
+
+    
+        
+      <div class="row">
+          <!--Login box-->
+            <div class="cont-1" style="background-color:#f1f1f1">
+                <div class="login-header">
+                <h1>EMPLOYEE LOG IN</h1>
+                </div>
+                <div class="login-box-stuff">
+                    <p>Username</p>
+                    <input type="text" placeholder="Enter Username" id="username" required>
+            
+                    <p>Password</p>
+                    <input type="password" placeholder="Enter Password" id="password" required>
+            
+                    <button onclick="logInEmployee()">Login</button>
+                </div>
+            </div>
+            <!--Registration box-->
+            <div class="cont-1" style="background-color:#f1f1f1" >
+                <div class="register-header">
+                <h1>EMPLOYEE REGISTER</h1>
+                </div>
+                <div class="register-box-stuff">
+                    <p>First Name</p>
+                    <input type="fname" placeholder="Enter First Name" id="fname" required>
+                    
+                    <p>Last Name</p>
+                    <input type="lname" placeholder="Enter Last Name" id="lname" required>
+
+                    <p>Address</p>
+                    <input type="text" placeholder="Enter Address" id="addr" required>
+                    
+                    <p>Social Security Number</p>
+                    <input class="registerInput" type="number" placeholder="Enter SSN" id="ssn" required>
+
+                    <p>Birthdate</p>
+                    <input class="registerInput" type="date" placeholder="Enter Birthdate" id="dob" required>
+
+                    <p>Username</p>
+                    <input type="text" placeholder="Enter Username" id="uname" required>
+
+                    <p>Password</p>
+                    <input type="password" placeholder="Enter Password" id="psw" required>
+
+                    <p>Verify Password</p>
+                    <input type="password" placeholder="Verify Password" id="vpsw" required>
+            
+                    <button onclick="addEmployee()">Create Employee Account</button>
+                </div>
+            </div>
+
+        </div>
+      
+      
+      
+      <script type="text/javascript" src="registerFunctions.js"></script>
+</body>
+</html>

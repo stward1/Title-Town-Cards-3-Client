@@ -1,0 +1,210 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*Google Font for body copied from online*/
+body{
+    font-family: 'Roboto', sans-serif;  
+}
+/*This creates the navbar*/
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+/*Pushes nav to the right*/
+nav{
+    flex: 1;
+    text-align: right;
+    padding-bottom: 15px;
+}
+/*puts list in a horizontal line*/
+nav ul{
+    display:inline-block;
+    list-style-type:none;
+}
+/*Takes away bulletpoints*/
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+}
+/*Changes the anchor link color to black */
+a{
+    text-decoration:none;
+    color: black;
+    padding-left: 15px;
+}
+/*Keeps it black when hovered over?*/
+p{
+    color: #555
+}
+/*spaces the margins of the navbar containe evenly on the page
+*/
+.header-container{
+    max-width:1300px;
+    margin:auto;
+    padding-left:25px;
+    padding-right: 25px;   
+}
+
+
+
+
+/*next 3 methods position the picture in the right side of the screen and at a specific size.*/
+.row{
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+col-4{
+    flex-basis:60%;
+    min-width:300px;
+}
+.col-4 image{
+    max-width:100%;
+}
+/*Changes style of title*/
+.col-4 h1{
+    font-family: 'Anton', sans-serif;
+    font-size:50px;
+    line-height:60px;
+    padding-left:25px;
+}
+.col-4 p{
+    padding-left:25px;
+}
+.col-4 a.btn{
+    margin-left: 20px;
+}
+
+
+
+/*container settings ans sizes*/
+.container{
+    max-width:1300px;
+    margin:auto;
+    padding-left:30px;
+    padding-right: 30px;
+}
+.container .row{
+    margin-top:50px;
+}
+.small-container{
+    max-width: 1000px;
+    margin: auto;
+    padding-left:25px;
+    padding-right:25px;
+    padding-top: 30px;
+}
+.cart-container{
+    margin-left: 15%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-width: 600px;
+    background-color: lightgrey;
+    display: inline-block;
+}
+
+/*setting button styles*/
+.btn{
+    display: inline-block;
+    background:#8B0000;
+    color:#fff;
+    padding:8px 30px;
+    margin:20px 0;
+    border-radius:30px;
+    /*hover color and how long it takes*/
+    transition: background 0.5s;
+}
+/*hover color*/
+.btn:hover{
+    background: red;
+    color:white;
+}
+
+/*This adds space from the top to bottom, speads everything down a little.*/
+.header .row{
+    margin-top:70px;
+}
+
+
+/*These 2 method style the inventory items and images*/
+
+.inv-item img{
+    width: 100%;
+    max-height:250px;
+}
+.inv-item{
+    flex-basis:25%;
+    padding:10px;
+    min-width:200px;
+    margin-bottom:50px;
+    transition: transform 0.5s;
+}
+.inv-item:hover{
+transform: translateY(-5px);
+}
+
+
+
+/*Button Stuff*/
+.filter-Buttons{
+    margin-left: 15%;
+    list-style-type: none;
+    margin-top: 110px;
+    border-radius:0px;
+}
+.sort-Buttons{
+    margin-left: 15%;
+    list-style-type: none;
+}
+.btn-primary{
+    border:none;
+    background:#555;
+    color:#fff;
+    padding:4px 15px;
+    border-radius:5px;
+}
+
+.cart-btn{
+    display: inline-block;
+    background:#555;
+    color:#fff;
+    padding:8px 30px;
+    margin:10px 0;
+    border-radius:15px;
+    /*hover color and how long it takes*/
+    transition: background 0.5s;
+}
+.cart-btn:hover{
+    background: #8b0000;
+    color:white;
+    transition: background 0.5s;
+}
+
+.page-btn{
+    margin:0 auto 80px;
+}
+.page-btn span{
+    display:inline-block;
+    border: 1px solid #8B0000;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.page-btn span:hover{
+    background:#8B0000;
+    color:#fff;
+}
+.proceed-cart-btn{
+    margin-left:15%;
+}
+

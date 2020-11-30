@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*Google Font for body copied from online*/
+body{
+    font-family: 'Roboto', sans-serif;  
+}
+/*This creates the navbar*/
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+/*Pushes nav to the right*/
+nav{
+    flex: 1;
+    text-align: right;
+}
+/*puts list in a horizontal line*/
+nav ul{
+    display:inline-block;
+    list-style-type:none;
+}
+/*Takes away bulletpoints*/
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+}
+/*Changes the anchor link color to black */
+a{
+    text-decoration:none;
+    color: #555;
+}
+/*Keeps it black when hovered over?*/
+p{
+    color: #555
+}
+/*spaces the margins of the navbar containe evenly on the page
+*/
+.container{
+    max-width:1300px;
+    margin:auto;
+    padding-left:25px;
+    padding-right: 25px;
+}
+
+/*-------cart items details-------*/
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left:20px;
+    padding-right:20px;
+}
+.small-container th{
+    font-family: 'Anton', sans-serif;
+    font-size:20px;
+}
+.cart-page{
+    margin:80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display:flex;
+    flex-wrap:wrap;
+}
+th{
+    text-align: left;
+    padding:8px;
+    color:#fff;
+    background: #8B0000;;
+    font-weight:normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width:40px;
+    height:30px;
+    padding: 5px;
+}
+td a{
+    color:#8B0000;
+    font-size:12px;
+}
+td img{
+    width:90px;
+    height:125px;
+    margin-right:   10px;
+}
+.total-price{
+    display:flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top:3px solid #8B0000;
+    width:100%;
+    max-width:400px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align:right;
+}
+.small-btn-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left:20px;
+    padding-right:20px;
+}
+.cart-btn{
+    display: inline-block;
+    background:#555;
+    color:#fff;
+    padding:8px 30px;
+    margin:30px 0;
+    border-radius:30px;
+    
+    left:50%;
+    transform: translateX(610%);
+
+    /*hover color and how long it takes*/
+    transition: background 0.5s;
+}
+.back-btn{
+    margin-left:30px;
+    padding:8px 30px;
+    display: inline-block;
+    background:#ccc;
+    color:#fff;
+    border-radius:10px;
+}
+/*hover color*/
+.cart-btn:hover{
+    background: #8B0000;
+}

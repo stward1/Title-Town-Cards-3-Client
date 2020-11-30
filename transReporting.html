@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporting</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--Below line links current sheet to css style page-->
+    <link rel ="stylesheet" type="text/css" href=".\resources\css\customerCart.css">
+    <link rel ="stylesheet" type="text/css" href=".\resources\css\index.css">
+    <!--Below is the link to get Roboto font from Googlefonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!--Link to cart icon-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+
+<body onload="loadAllTransactions()">
+    <div class="header">
+        <!--Adds the navbar inside a class named container-->
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <!--logo from images folder-->
+                    <img src="./resources/images/TTownCardsLogo.png" width="125px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html"> Home </a></li>
+                        <li><a href=""> About </a></li>
+                        <li><a href=""> Contact </a></li>
+                        <li><a href=""> Account </a></li>
+                        <li><a href=""> Login/Register </a></li>
+                        <li><a href=""> Cart </a></li>
+                    </ul>
+                    <!--adds icon for cart-->
+                    <i class="fa fa-shopping-cart" width="30px" height "30px"></i>
+                </nav>
+            </div>
+        </div>
+    </div> 
+
+    <div class="small-container">
+        <h1>All Transactions</h1><br>
+        <table id="transactions">
+            <!-- All transactions go here -->
+            <tr>
+                <th></th>
+                <th>ID</th>
+                <th>Item IDs</th>
+                <th>Date</th>
+                <th>Subtotal</th>
+                <th>Discount</th>
+                <th>Payment Type</th>
+                <th>Employee ID</th>
+                <th>Customer Email</th>
+            </tr>
+        </table>
+    </div>
+
+    <button class="btn btn-primary" data-toggle="modal" data-target="#chartModal" onclick="GenerateROTReport()">Generate Revenue Over Time Report</button>
+
+    <div class="modal fade" id="chartModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">Revenue Over Time</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div id="chartDisplay"></div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">Close Chart</button>
+            </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="browseTransaction.js"></script>
+    <script type="text/javascript" src="reportingFunctions.js"></script>
+    <!-- I need this for the chart generation -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
