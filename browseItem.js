@@ -1,5 +1,8 @@
 //THIS FILE HOLDS METHODS FOR BROWSING ITEMS; DEFINITELY SHOULD BE SPLIT UP LATER
 
+//global API url
+const itemURL = `http://title-town-cards-3-api.herokuapp.com/api/items/`
+
 function saveCart() {
     //getting the comma delimited string of items
     const itemString = document.querySelector("#cart").getAttribute("items");
@@ -346,7 +349,7 @@ function addCard() {
         newCondition = "Unspecified";
     }
 
-    const url = 'https://localhost:5001/api/items';
+    const url = itemURL;
 
     //post request
     fetch(url, {
@@ -380,7 +383,7 @@ function addMemorabilia() {
 
     const newDescription = document.querySelector("#newDescription").value;
 
-    const url = 'https://localhost:5001/api/items';
+    const url = itemURL;
 
     //post request
     fetch(url, {
@@ -426,7 +429,7 @@ function modifyCard() {
     const newTeam = document.querySelector("#modTeam").value;
     const newSport = document.querySelector("#modSport").value;
 
-    const url = `https://localhost:5001/api/items/${itemId}`;
+    const url = `${itemURL}${itemId}`;
     
     fetch(url, {
         method: "PUT",
@@ -456,7 +459,7 @@ function modifyMemorabilia() {
     const newPrice = parseFloat(document.querySelector("#modPrice").value);
     const newDescription = document.querySelector("#modDescription").value;
 
-    const url = `https://localhost:5001/api/items/${itemId}`;
+    const url = `${itemURL}${itemId}`;
     
     fetch(url, {
         method: "PUT",
@@ -481,7 +484,7 @@ function deleteItem() {
     //grabbing the id to delete
     const itemId = parseInt(document.querySelector("#currentItemId").textContent);
 
-    const url = `https://localhost:5001/api/items/${itemId}`;
+    const url = `${itemURL}${itemId}`;
     
     fetch(url, {
         method: "DELETE",
