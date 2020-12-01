@@ -1,3 +1,9 @@
+//global customer url
+const customerURL = `http://title-town-cards-3-api.herokuapp.com/api/customer/`;
+
+//global employee url
+const employeeURL = `http://title-town-cards-3-api.herokuapp.com/api/employee/`;
+
 function addCustomer() {
     //reading in the sign up fields
     const firstName = document.querySelector("#firstName").value;
@@ -9,7 +15,7 @@ function addCustomer() {
 
     console.log(firstName, lastName, email, phone, password);
 
-    const url = 'https://localhost:5001/api/customer';
+    const url = customerURL;
 
     fetch(url, {
         method: 'POST',
@@ -55,7 +61,7 @@ function logInCustomer() {
 
     console.log(email, password);
 
-    const url = 'https://localhost:5001/api/customer';
+    const url = customerURL;
 
     fetch(url, {
         method: 'PUT',
@@ -100,7 +106,7 @@ function addEmployee() {
 
     console.log(firstName, lastName, address, ssn, birthdate, username, password);
 
-    const url = 'https://localhost:5001/api/employee';
+    const url = employeeURL;
 
     fetch(url, {
         method: 'POST',
@@ -138,7 +144,7 @@ function logInEmployee() {
 
     console.log(username, password);
 
-    const url = 'https://localhost:5001/api/employee';
+    const url = employeeURL;
 
     fetch(url, {
         method: 'PUT',

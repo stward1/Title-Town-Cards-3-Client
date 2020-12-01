@@ -1,7 +1,7 @@
 //THIS FILE HOLDS METHODS FOR BROWSING ITEMS; DEFINITELY SHOULD BE SPLIT UP LATER
 
 //global API url
-const itemURL = `http://title-town-cards-3-api.herokuapp.com/api/items/`
+const itemURL = `http://title-town-cards-3-api.herokuapp.com/api/items/`;
 
 function saveCart() {
     //getting the comma delimited string of items
