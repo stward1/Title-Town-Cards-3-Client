@@ -47,7 +47,20 @@ function completeTransaction() {
     }
 }
 
+//this function just ensures that customer and employee won't be blank; the db will brick if it is
+function secureUsers()
+{
+    //the customer is currently secured elsewhere, we'll move it here later if we get a chance
+
+    if (localStorage.getItem("employee") === null)
+    {
+        localStorage.setItem("employee", 0);
+    }
+}
+
 function addTransaction() {
+    secureUsers();
+
     const url = 'http://title-town-cards-3-api.herokuapp.com/api/transaction/';
 
     const stringItems = localStorage.getItem("cartItems").split(',');
