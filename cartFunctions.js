@@ -82,7 +82,7 @@ function loadCart() {
     </tr>
     `;
 
-    fetch(`https://localhost:5001/api/items/cartinfo/${itemString}`)
+    fetch(`http://title-town-cards-3-api.herokuapp.com/api/items/cartinfo/${itemString}`)
         .then(response => response.json())
         .then(cartInfo => {
             const items = cartInfo.items;

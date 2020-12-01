@@ -1,21 +1,12 @@
 //THIS FILE HOLDS METHODS FOR BROWSING TRANSACTIONS; DEFINITELY SHOULD BE SPLIT UP LATER
 
-/*
-<tr>
-    <th>ID</th>
-    <th>Item IDs</th>
-    <th>Date</th>
-    <th>Subtotal</th>
-    <th>Discount</th>
-    <th>Payment Type</th>
-    <th>Employee ID</th>
-    <th>Customer Email</th>
-</tr>  
-*/
+//global transaction url
+const transactionURL = `http://title-town-cards-3-api.herokuapp.com/api/transaction/`;
+
 
 
 function loadAllTransactions() {
-    const url = "https://localhost:5001/api/transaction";
+    const url = transactionURL;
     var html = ``;
     
     fetch(url)

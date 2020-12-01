@@ -6,7 +6,7 @@ function loadCartInfo() {
 
     const itemString = localStorage.getItem("cartItems");
 
-    fetch(`https://localhost:5001/api/items/cartinfo/${itemString}`)
+    fetch(`http://title-town-cards-3-api.herokuapp.com/api/items/cartinfo/${itemString}`)
     .then(response => response.json())
     .then(cartInfo => {
 
@@ -48,7 +48,7 @@ function completeTransaction() {
 }
 
 function addTransaction() {
-    const url = 'https://localhost:5001/api/transaction';
+    const url = 'http://title-town-cards-3-api.herokuapp.com/api/transaction/';
 
     const stringItems = localStorage.getItem("cartItems").split(',');
     var discount  = document.getElementById("cartDiscount").textContent;
@@ -98,7 +98,7 @@ function updateRewardsPoints()
     if (localStorage.getItem("customer") !== "GUEST") {
         console.log('correctw');
         
-        const url = `https://localhost:5001/api/customer/${localStorage.getItem("customer")}`;
+        const url = `http://title-town-cards-3-api.herokuapp.com/api/customer/${localStorage.getItem("customer")}`;
 
         fetch(url, {
             method: 'PUT',
