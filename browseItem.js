@@ -93,7 +93,7 @@ function removeItemFromCart(e) {
 }
 
 function loadAllItemsForShopping() {
-    fetch("https://localhost:5001/api/items")
+    fetch(itemURL)
         .then(response => response.json())
         .then(items => {
             items.forEach(item => {
@@ -170,7 +170,7 @@ function loadAllItemsForEditing() {
     //emptying the div first, this is necessary to stop duplication when updating/deleting
     document.querySelector("#items").innerHTML = ``;
 
-    fetch("https://localhost:5001/api/items")
+    fetch(itemURL)
         .then(response => response.json())
         .then(items => {
             items.forEach(item => {
