@@ -75,8 +75,8 @@ function displayChart(months, amounts) {
         var options = {
             series: {0:{color: '#8B0000', visibleInLegend: false}},
             'title':'Revenue Per Month (USD)',
-            'width':450,
-            'height':450,
+            'width':900,
+            'height':900,
             hAxis: {
                 title: 'Month'
             },
