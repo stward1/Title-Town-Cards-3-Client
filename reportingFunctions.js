@@ -76,7 +76,14 @@ function displayChart(months, amounts) {
             series: {0:{color: '#8B0000', visibleInLegend: false}},
             'title':'Revenue Per Month',
             'width':450,
-            'height':450
+            'height':450,
+            hAxis: {
+                title: 'Month'
+            },
+            vAxis: {
+                title: 'Revenue (USD)',
+                ticks: [0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+            }
         };
 
         //making a chart and giving it a location in the DOM
