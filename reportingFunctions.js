@@ -51,6 +51,9 @@ function GenerateROTReport()
 }
 
 function displayChart(months, amounts) {
+    //resetting the chart
+    document.getElementById('chartDisplay').innerHTML = ``;
+
     //loading the api stuff we'll need
     google.charts.load('current', {'packages':['corechart']});
 
