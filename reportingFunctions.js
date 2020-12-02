@@ -74,9 +74,9 @@ function displayChart(months, amounts) {
         //setting the title and size of the chart; the first bit hides the series legend
         var options = {
             series: {0:{color: '#8B0000', visibleInLegend: false}},
-            'title':'Revenue Per Month',
-            'width':480,
-            'height':480,
+            'title':'Revenue Per Month (USD)',
+            'width':450,
+            'height':450,
             hAxis: {
                 title: 'Month'
             },
